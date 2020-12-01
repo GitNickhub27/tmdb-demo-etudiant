@@ -21,7 +21,7 @@ class MovieDB {
     requeteDernierFilm() {
         let requete = new XMLHttpRequest();
         requete.addEventListener("loadend", this.retourDernierFilm.bind(this));
-        requete.open("GET", this.baseURL + "movie/now_playing?api_key=" + this.apiKey + "&language=" + this.lang + "&page=1")
+        requete.open("GET", this.baseURL + "movie/popular?api_key=" + this.apiKey + "&language=" + this.lang + "&page=1")
         requete.send();
     }
 
