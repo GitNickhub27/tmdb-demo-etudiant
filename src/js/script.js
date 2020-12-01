@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function (evt) {
 class MovieDB {
 
     constructor() {
-
         console.log("New MovieDB()");
         this.apiKey = "ac79768f9f8c3498a3e478ec6bb5ce38";
         this.lang = "fr-CA";
@@ -37,7 +36,6 @@ class MovieDB {
         console.log("afficherDernierFilm");
         for (let i = 0; i < data.length; i++) {
             console.log(data[i].title);
-
 
         }
 
